@@ -1,17 +1,16 @@
 async function main(){
   await loadScript('https://unpkg.com/vue/dist/vue.js');
   await loadScript('https://unpkg.com/element-ui/lib/index.js');
-  // await loadScript('./final.js');
 
   creatComponent();
 }
 // 创建组件
 function creatComponent() {
-  const t = document.body;
-  const el = document.createElement('div');
-  el.id = 'app';
-  el.innerHTML = '<div><div>{{data}}</div><el-button type="primary" icon="el-icon-edit"></el-button></div>'
-  t.append(el);
+  // const t = document.body;
+  // const el = document.createElement('div');
+  // el.id = 'app';
+  // el.innerHTML = '<div><Test :msg="message"></Test><div>{{data}}</div><el-button type="primary" icon="el-icon-edit"></el-button></div>'
+  // t.append(el);
   createVue({ visible: false, message: 'wsn',data: 233 })
 }
 // 创建vue
